@@ -1,0 +1,63 @@
+#Openwrt 安装串口识别库
+
+opkg update
+opkg install kmod-usb-acm
+opkg install kmod-usb-serial-ftdi
+
+
+#Openwrt 查看设备名
+
+ls /dev
+
+
+#安装ser2net
+
+opkg update
+opkg install ser2net
+
+#ser2net串口转tcp，端口8082，波特率115200，设备名/dev/ttyATH0
+
+vim /etc/ser2net.conf
+8082:raw:0:/dev/ttyATH0:115200 NONE 1STOPBIT 8DATABITS LOCAL -RTSCTS 
+
+#启动ser2net
+
+ser2net
+
+
+#安装stty
+
+opkg udpate
+opkg install coreutils-stty
+
+#Openwrt 查看串口波特率
+
+stty -F /dev/ttyATH0 -a
+
+#Openwrt 修改串口波特率
+
+stty -F /dev/ttyATH0 raw speed 115200
+
+
+#ser2net开机自启
+
+vim /etc/init.d/ser2net
+
+#!/bin/sh /etc/rc.common
+START=99
+STOP=15
+
+start() {
+  echo start
+  ser2net
+}
+
+stop() {
+  echo stop
+}
+
+chmod +x /etc/init.d/ser2net
+/etc/init.d/ser2net enable
+
+视频
+http://192.168.1.1:8080/?action=stream
