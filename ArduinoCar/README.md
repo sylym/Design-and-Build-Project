@@ -41,6 +41,8 @@ The Arduino car can be operated using the [main.py](scripts/main.py) script. The
 2. Capturing Images from the Car's Camera, Performing Object Detection, and Saving the Detected Image Results.
 3. Controlling the Car to Return.
 
+Note: [Virtual port mapping](images/virtual-port.png) is required to use the above features.
+
 ## Folder Structure
 
 The main folder structure of the project is as follows:
@@ -54,5 +56,11 @@ The main folder structure of the project is as follows:
 └── extra_script.py    # Project's flashing script file
 ```
 
+## Circuit Diagram
 
+The Fritzing simulation circuit diagram of the car is as follows:
+
+![Circuit Diagram](images/circuit-diagram.png)
+
+## Authors
 
