@@ -62,5 +62,4 @@ The Fritzing simulation circuit diagram of the car is as follows:
 
 ![Circuit Diagram](images/circuit-diagram.png)
 
-## Authors
 
