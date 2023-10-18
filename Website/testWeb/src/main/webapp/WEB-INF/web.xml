@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>testWeb</display-name>
+  <servlet>
+    <servlet-name>loginOrRegisterServlet</servlet-name>
+    <servlet-class>testWeb.servlet.loginOrRegisterServlet</servlet-class>
+  </servlet>
+  
+  <welcome-file-list>
+    <welcome-file>/loginOrRegist.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet-mapping>
+    <servlet-name>loginOrRegisterServlet</servlet-name>
+    <url-pattern>/loginOrRegist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>testWeb.servlet.UserLoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>testWeb.servlet.RegisterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>WantChangePswrdServlet</servlet-name>
+    <servlet-class>testWeb.servlet.WantChangePswrdServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>WantChangePswrdServlet</servlet-name>
+    <url-pattern>/wantchangepswrd</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ChangePswrdServlet</servlet-name>
+    <servlet-class>testWeb.servlet.ChangePswrdServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ChangePswrdServlet</servlet-name>
+    <url-pattern>/changepassword</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ReturnServlet</servlet-name>
+    <servlet-class>testWeb.servlet.ReturnServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ReturnServlet</servlet-name>
+    <url-pattern>/return</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Return2Servlet</servlet-name>
+    <servlet-class>testWeb.servlet.Return2Servlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Return2Servlet</servlet-name>
+    <url-pattern>/return2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>testWeb.servlet.AdminServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>testWeb.servlet.DeleteServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FindServlet</servlet-name>
+    <servlet-class>testWeb.servlet.FindServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>FindServlet</servlet-name>
+    <url-pattern>/find</url-pattern>
+  </servlet-mapping>
+ 
+      <servlet>
+    <servlet-name>CheckUserServlet</servlet-name>
+    <servlet-class>testWeb.servlet.CheckUserServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckUserServlet</servlet-name>
+    <url-pattern>/checkUserinfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CarregServlet</servlet-name>
+    <servlet-class>testWeb.servlet.CarregServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CarregServlet</servlet-name>
+    <url-pattern>/carRegister</url-pattern>
+  </servlet-mapping>
+   
+</web-app>

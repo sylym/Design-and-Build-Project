@@ -13,7 +13,7 @@ To support the operation of the entire system, a database will be designed to ma
 ```bash Stores project documentation
 ├── ArduinoCar            # Telecom: Hardware Model and Control Software    
 ├── IoT_ObjectDetection   # IoT: Object Detection Software
-├── IoT_ObjectDetection   # E-Commerce: Database Management and Web Visualisation
+├── Website               # E-Commerce: Database Management and Web Visualisation
 └── Meeting_minutes       # Meeting Minutes
 ```
 
