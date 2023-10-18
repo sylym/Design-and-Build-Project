@@ -56,10 +56,15 @@ The main folder structure of the project is as follows:
 └── extra_script.py    # Project's flashing script file
 ```
 
-## Circuit Diagram
+## Car Circuit Diagram
 
 The Fritzing simulation circuit diagram of the car is as follows:
 
 ![Circuit Diagram](images/circuit-diagram.png)
 
+## Car Workflow Diagram
+
+The workflow diagram of the car is as follows:
+
+![Workflow Diagram](images/workflow-diagram.png)
 
